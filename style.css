@@ -17,16 +17,20 @@ body {
 }
 
 button {
-    background-color: purple;
-    color: #fff;
-    border: 1px purple solid;
+    background-color: #48cae4;
+    color: #000;
+    border: 10px yellow solid;
+    border-radius: 5%;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 20px 30px;
+    padding: 200px 300px;
     overflow: hidden;
     margin: 10px 0;
     position: relative;
+    background-image: url('./gif/water.webp');
+    background-size: cover; 
+    background-position: center;
 }
 
 button:focus {
@@ -35,17 +39,18 @@ button:focus {
 
 button .circle {
     position: absolute;
-    background-color: #fff;
-    width: 100px;
-    height: 100px;
+    background-color: #caf0f8;
+    width: 1000px;
+    height: 1000px;
     border-radius: 50%;
     transform: translate(-50%, -50%) scale(0);
-    animation: scale 0.5s ease-out;
+    animation: scale 3s ease-out;
+    opacity: 25%;
 }
 
 @keyframes scale {
     to {
-        transform: translate(-50%, -50%) scale(0);
+        transform: translate(-50%, -50%) scale(3);
         opacity: 0;
     }
 }
